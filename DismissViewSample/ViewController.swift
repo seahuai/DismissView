@@ -14,7 +14,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.layoutIfNeeded()
-        view.addDismissView(withStyle: .Tremble)
+//        view.addDismissView(withStyle: .Tremble)
+//        self.view.addDismissView(withStyle: .Drop)
+//        self.view.addDismissView(withStyle: .Default)
     }
 
 

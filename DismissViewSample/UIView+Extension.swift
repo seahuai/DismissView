@@ -90,10 +90,12 @@ extension UIView{
     fileprivate func addDismissView(){
         let dismissView = UIView(frame: CGRect(x: 0, y: 0, width: SWidth * 0.5, height: SHeight * 0.3))
         dismissView.layer.cornerRadius = 0.1 * dismissView.bounds.width
-        dismissView.center = self.center
+        dismissView.center = CGPoint(x: SWidth * 0.5, y: SHeight * 0.5)
         dismissView.backgroundColor = UIColor.white
         dismissView.tag = 1
         addSubview(dismissView)
+        
+     
     }
     //动画
     @objc fileprivate func defaultDismiss(){
