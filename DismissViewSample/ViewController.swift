@@ -15,8 +15,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.layoutIfNeeded()
 //        view.addDismissView(withStyle: .Tremble)
-//        self.view.addDismissView(withStyle: .Drop)
-//        self.view.addDismissView(withStyle: .Default)
+//        view.addDismissView(withStyle: .Drop)
+//        view.addDismissView(withStyle: .Default)
+//        view.addDismissView(color: <#T##UIColor#>, alpha: <#T##CGFloat#>)
     }
 
 

@@ -50,6 +50,17 @@ extension UIView{
     func dismiss(){
         defaultDismiss()
     }
+    
+    func dismiss(withStyle style: AnimatedStyle){
+        switch style {
+        case .Default:
+            defaultDismiss()
+        case .Drop:
+            dropDismiss()
+        case .Tremble:
+            trembleDismiss()
+        }
+    }
     func addDismissView(withStyle style: AnimatedStyle){
         for view in self.subviews{
             if view.tag == 1{
